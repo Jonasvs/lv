@@ -16,7 +16,7 @@
         <td>
             <form method="GET" action="https://www.google.at/search">
                 <label for="q">Keyword:</label>
-                <input type="text" name="q" size="5" />
+                <input type="text" id="q" name="q" size="5" />
                 <input type="submit" value="Suchen" />
             </form>
         </td>
@@ -24,11 +24,11 @@
             <pre>
 &lt;form method="GET" action="https://www.google.at/search"&gt;
     &lt;label for="q"&gt;Keyword:&lt;/label&gt;
-    &lt;input type="text" name="q" size="5" /&gt;
+    &lt;input type="text" id="q" name="q" size="5" /&gt;
     &lt;input type="submit" value="Suchen" /&gt;
 &lt;/form>
 </pre>
-            form definiert den Formularbereich, method bestimmt die Art der Anfrage (GET oder POST) und action enthält das Skript das auszuführen ist. Über label kann Text mit einem Formularfeld verknüpft werden - die Attribute for beim label und name beim input-Element stellen dabei diesen Zusammenhang her.
+            form definiert den Formularbereich, method bestimmt die Art der Anfrage (GET oder POST) und action enthält das Skript das auszuführen ist. Über label kann Text mit einem Formularfeld verknüpft werden - die Attribute for beim label und id beim input-Element stellen dabei diesen Zusammenhang her.
         </td>
     </tr>
 
@@ -137,15 +137,15 @@
         <td>
             <pre>&lt;select name="district" multiple size="10"&gt;
     &lt;optgroup label="Bezirk(e) auswählen"&gt;
-        &lt;option value="1701" selected&gt;Innsbruck</option>
-        &lt;option value="1702"&gt;Imst</option>
-        &lt;option value="1703"&gt;Innsbruck Land</option>
-        &lt;option value="1704"&gt;Kitzbühel</option>
-        &lt;option value="1705"&gt;Kufstein</option>
-        &lt;option value="1706"&gt;Landeck</option>
-        &lt;option value="1707"&gt;Lienz</option>
-        &lt;option value="1708"&gt;Reute</option>
-        &lt;option value="1709"&gt;Schwaz</option>
+        &lt;option value="1701" selected&gt;Innsbruck&lt;/option&gt;
+        &lt;option value="1702"&gt;Imst&lt;/option&gt;
+        &lt;option value="1703"&gt;Innsbruck Land&lt;/option&gt;
+        &lt;option value="1704"&gt;Kitzbühel&lt;/option&gt;
+        &lt;option value="1705"&gt;Kufstein&lt;/option&gt;
+        &lt;option value="1706"&gt;Landeck&lt;/option&gt;
+        &lt;option value="1707"&gt;Lienz&lt;/option&gt;
+        &lt;option value="1708"&gt;Reute&lt;/option&gt;
+        &lt;option value="1709"&gt;Schwaz&lt;/option&gt;
     &lt;/optgroup&gt;
 &lt;/select&gt;</pre>
             Über das Attribut size aufgeklappte Auswahlliste mit Mehrfachselektion über das Attribut multiple. Die Einträge sind durch ein optgroup-Element gruppiert dessen label-Attribut den Titel der Gruppe bestimmt.
@@ -196,20 +196,20 @@
         <td>
             <fieldset>
                 <legend>Benutzer-Login</legend>
-                <input type="text" name="user" size="10" />
-                <label for="user"> Name
+                <input type="text" id="user" name="user" size="10" />
+                <label for="user"> Name</label>
                 <br />
-                <input type="password" name="pass" size="10" />
-                <label for="pass"> Passwort
+                <input type="password" id="pass" name="pass" size="10" />
+                <label for="pass"> Passwort</label>
             </fieldset>
         </td>
         <td>
             <pre>&lt;fieldset&gt;
-    &lt;legend&gt;Benutzer-Login</legend>
-    &lt;input type="text" name="user" size="10" /&gt;
+    &lt;legend&gt;Benutzer-Login&lt;/legend&gt;
+    &lt;input type="text" id="user" name="user" size="10" /&gt;
     &lt;label for="user"&gt; Name
     &lt;br /&gt;
-    &lt;input type="password" name="pass" size="10" /&gt;
+    &lt;input type="password" id="pass" name="pass" size="10" /&gt;
     &lt;label for="pass"&gt; Passwort
 &lt;/fieldset&gt;</pre>
             Grafische und inhaltliche Gruppierung von Formularfeldern über das Attribut fieldset mit einem legend-Attribut.
