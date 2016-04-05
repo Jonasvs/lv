@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>basemap.at (leaflet)</title>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script>
+    window.onload = function () {
+        var map = L.map('map', {
+            center : [47.264269, 11.385312],
+            zoom : 16
+        });
+
+        L.tileLayer("http://{s}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{z}/{y}/{x}.png", {
+            subdomains : ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
+            attribution : '<a href="http://www.basemap.at/">basemap.at</a>'
+        }).addTo(map);
+
+    };
+</script>
+</head>
+<body>
+    <div id="map" style="width:900px;height:600px"></div>
+</body>
+</html>
